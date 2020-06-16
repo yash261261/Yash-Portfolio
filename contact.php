@@ -3,13 +3,13 @@
 if($_POST["submit"]) {
     $recipient="yash261261@gmail.com";
     $subject="Website Email Message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
+    $sender=$_POST["name"];
+    $senderEmail=$_POST["email"];
     $message=$_POST["message"];
 
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+    $mailBody="Name: $name\nEmail: $email\n\n$message";
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+    mail($recipient, $subject, $mailBody, "From: $sender <$email>");
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
