@@ -34,7 +34,7 @@ $(document).ready(function() {
     $('body').vegas({
         slides: [
             { src: 'images/yash1.jpg' },
-            { src: 'images/yash2.jpg' },
+            { src: 'images/yash2.jpg' }
         ],
         timer: false,
         transition: [ 'zoomIn', ],
